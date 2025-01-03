@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+.pacifico-font {
+  font-family: 'Pacifico', cursive;
+}
+.scroll-margin-top {
+  scroll-margin-top: 11rem; 
+}
+
+@media (min-width: 768px) {
+  .scroll-margin-top {
+    scroll-margin-top: 9rem; 
+  }
+}
+
+.custom-radio {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #283593;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+}
+
+.custom-radio:checked::before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #283593;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
